@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>njonjo kibe</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<
+<div id="header">
+
+<div id="container">
+<nav>
+<img height="100px" width="200px" src="images/logo.png" alt="">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Portfolio</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<div class="header-text">
+<p>FRONTEND DEVELOPER</p>
+<h1>Hi, I'm <span>NJONJO KIBE &#128525; </span> KIBE <br>from Miniminds Coding Club</h1>
+</div>
+
+</div>
+
+</div>
+
+<div id="about">
+
+<div class="container">
+<div class="row">
+
+<div class="about-col-1">
+<img height="500vh" src="images/njonjo.png" alt="">
+</div>
+
+<div class="about-col-2">
+
+<h1>About Me</h1>
+<p>njonjo kibe is a 9-year-old student❤️ at Miniminds Coding Club with a strong passion for technology, coding, and creativity. He has developed practical skills in HTML, CSS, and JavaScript, which he uses to create and design websites for his portfolio. He is also skilled in Canva, where he creates creative posters, graphics, presentations, and edits videos. njonjo kibe enjoys combining coding and design to bring his ideas to life and is continuously developing his skills as a young digital creator.</p>
+<div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+<p class="tab-links" onclick="opentab('experience')">Experience</p>
+<p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+<div class="tab-contents active-tab" id="skills">
+<ul>
+<li><span>web Developer</span><br> FRONTEND developer😊</li>
+<li><span> YouTube</span><br> Video editing😊</li>
+<li><span>Footballer</span><br> I am a professional footballer 😊</li>
+</ul>
+</div>
+
+<div class="tab-contents" id="experience">
+<ul>
+<li><span>April 2026 - current</span><br> FRONTEND developer student at Miniminds coding club</li>
+<li><span>Feb 2025 - November 2025 </span><br> cupcut Designer specialized in Video editing😊</li>
+<li><span>2020 - current</span><br> footballer 😊</li>
+</ul>
+</div>
+
+<div class="tab-contents" id="education">
+<ul>
+<li><span>April 2026 - current</span><br> FRONTEND developer student at Miniminds coding club</li>
+<li><span>Feb 2025 - November 2025 </span><br> cupcut Designer specialized in Video editing at Miniminds coding club</li>
+<li><span>2020 - current</span><br> footballer at noblegate International School</li>
+</ul>
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+
+</div>
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+for(tablink of tablinks) {
+tablink.classList.remove("active-link");
+}
+
+for(tabcontent of tabcontents) {
+tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+
+</script>
+
+
+</body>
+</html>
+
